@@ -1,0 +1,17 @@
+# Java access control
+***
+## Class
+There are only two kinds of Java class access control.
+* *public*. This keyword indicate that this class is available anywhere.
+* *default*. Class without *public* keyword is only accessible to the classes in the same package. This fits helper classes which should not be visible to other packages.
+
+**Note:** *private* or *protected* can not be used to modify class.
+
+## Class member or method
+There are four kinds of access control for class member or method.
+| | Same class | Same package | Subclass in different package | Non-subclass in different package |
+|-|:-:|:-:|:-:|:-:|
+| **private**   | ✔ | ✗ |  ✗ | ✗ |
+| **default**   | ✔ | ✔ |  ✗ | ✗ |
+| **protected** | ✔ | ✔ |  ✔ | ✗ |
+| **public**    | ✔ | ✔ |  ✔ | ✔ |
